@@ -1071,7 +1071,7 @@ void get_package_long_packge_serial_number(unsigned char *buf, int length)
 //0x46 // 70
 //0x50 // 80
 //0x5A // 90
-unsigned char long_packge_version_version_and_name_AMS08[] = {0x04, 0x00, 0x15, 0x57 , // verison number
+unsigned char long_package_version_version_and_name_AMS08[] = {0x57, 0x15, 0x00, 0x04 , // version number
                                                               0x41, 0x4D, 0x53, 0x30, 0x38, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 //unsigned char long_packge_version_version_and_name_AMS2PRO[] = {
 //    0x00, 0x00, 0x00, 0x5A,
@@ -1091,11 +1091,11 @@ void get_package_long_packge_version(unsigned char *buf, int length)
     if (ams_num != fixed_ams_num || ams[bambubus_ams_map[fixed_ams_num]].online != true)
         return;
 
-    long_packge_version_version_and_name_AMS08[sizeof(long_packge_version_version_and_name_AMS08) - 1u] = fixed_ams_num;
+    long_package_version_version_and_name_AMS08[sizeof(long_package_version_version_and_name_AMS08) - 1u] = fixed_ams_num;
 
     bambubus_long_packge_data data;
-    data.datas = long_packge_version_version_and_name_AMS08;
-    data.data_length = (uint16_t)sizeof(long_packge_version_version_and_name_AMS08);
+    data.datas = long_package_version_version_and_name_AMS08;
+    data.data_length = (uint16_t)sizeof(long_package_version_version_and_name_AMS08);
     data.package_number = printer_data_long.package_number;
     data.type = printer_data_long.type;
     data.source_address = printer_data_long.target_address;
