@@ -42,10 +42,6 @@ Using AMS Lite will cause incompatibility issues.
   Direct Revolut support avoids Ko-fi fees, so more of your contribution goes directly to the project.
 </p>
 
-=======
-
-> > > > > > > f07d4d6 (add my build settings to README)
-
 # ❗ IMPORTANT - FIRST START (V10.3+) ❗
 
 At the first startup after flashing, **all channels must be empty**.
