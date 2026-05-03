@@ -42,9 +42,10 @@ Using AMS Lite will cause incompatibility issues.
   Direct Revolut support avoids Ko-fi fees, so more of your contribution goes directly to the project.
 </p>
 
-
 =======
->>>>>>> f07d4d6 (add my build settings to README)
+
+> > > > > > > f07d4d6 (add my build settings to README)
+
 # ❗ IMPORTANT - FIRST START (V10.3+) ❗
 
 At the first startup after flashing, **all channels must be empty**.
@@ -253,9 +254,9 @@ Please verify the basics first:
 If you encounter a real bug, you may report it.
 This firmware has undergone solid testing, and no issues are expected.
 
-## build settings for me
+## To build a specific firmware:
 
-retract 10cm
+retract 10cm for example (default is 0.095f)
 
 ```bash
 BAMBU_BUS_AMS_NUM=0 \
@@ -263,7 +264,7 @@ AMS_RETRACT_LEN=0.15f \
 BMCU_DM_TWO_MICROSWITCH=1 \
 BMCU_ONLINE_LED_FILAMENT_RGB=1 \
 DBMCU_P1S=0 \
-BMCU_SOFT_LOAD=0 \
+BMCU_SOFT_LOAD=1 \
 pio run -e fw
 ```
 
